@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Momo+Signature&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #FFC60B;
+    --green: #85AE85;
+    --light-blue: #0A95FF;
+    --dark-blue: #230AFF;
+    --purple: #7766FF;
+    --lilac: #AAA0FF;
+    --dark-orange: #df880a;
+    --chocolate: #c16a08;
+    --khaki: #ffde73;
+}
+
+body{
+    background-image: url(./heaven-background.png);
+    padding: 10px 20px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*ID Styling*/
+#content{
+    background-color: white;
+    border-radius: 12px;
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 140px;
+    gap: 15px;
+}
+
+#intro-bird{
+    width: 60px;
+    height: 60px;
+    fill: white;
+}
+
+.info-cont{
+    width: 620px;
+    background: linear-gradient(135deg,#FEC601 0%, #FFB400 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--chocolate);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.info-cont p{
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.info-cont .reviewer{
+    font-weight: 700;
+}
