@@ -1,15 +1,15 @@
 const loadHomePage = function(){
-    const openingHours = ["Sunday: 8am - 8pm","Monday: 6am - 6pm","Tuesday: 6am - 6pm","Wednesday: 6am - 6pm","Thursday: 6am - 10pm","Friday: 6am - 10pm","Saturday: 8am - 10pm"];
+    const openingHours = ["Sunday: 8am - 8pm","Monday: 6am - 6pm","Tuesday: 6am - 6pm","Wednesday: 6am - 6pm","Thursday: 6am - 10pm","Friday: 6am - 10pm","Saturday: Closed for the Sabbath"];
     const contentDiv = document.getElementById("content");
     const divsCont = document.createElement("div");
     divsCont.id = "divs-cont"
     const title = document.createElement("h1");
-    title.innerText = "Mi Angelo Restaurant";
+    title.innerText = "Heaven's Gate Restaurant";
     contentDiv.appendChild(title);
     const introDiv = document.createElement("div");
     introDiv.setAttribute("class","info-cont");
     const introDivP = document.createElement("p");
-    introDivP.innerText = "Mi Angelo has the best fruit bowl and pastries! The atmosphere and customer service is heavenly and the actual food are delicious enough to die and reincarnate for! This is definitely the kind of place fit for an angel.";
+    introDivP.innerText = "Heaven's Gate has the best meals! The atmosphere and customer service is heavenly(no pun intended lol) and the actual food are delicious enough to die and reincarnate for! This is definitely the kind of place fit for an angel.";
     const introDivPName = document.createElement("p");
     introDivPName.innerText = "- Michaelangelo"
     introDivPName.setAttribute("class","reviewer");
@@ -33,7 +33,7 @@ const loadHomePage = function(){
     locationDivH2.innerText = "Location";
     locationDiv.appendChild(locationDivH2);
     const locationDivP = document.createElement("p");
-    locationDivP.innerText = "71-75 Houghton Street, Los Angeles, England.";
+    locationDivP.innerText = "71-75 Firmament Street, Skyline, Heaven.";
     locationDiv.appendChild(locationDivP);
     divsCont.appendChild(locationDiv);
     contentDiv.appendChild(divsCont)

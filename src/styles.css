@@ -27,6 +27,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 header{
@@ -35,11 +36,11 @@ header{
 
 /*ID Styling*/
 #nav-bar{
-    
     display: flex;
     justify-content: space-between;
     
 }
+
 #content{
     background-color: white;
     border-radius: 12px;
@@ -58,12 +59,21 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 15px;
 }
 
-#divs-cont-menu{
+#divs-cont-menu, #divs-cont-contact{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+#divs-cont-contact{
+    align-items: center;
+}
+
+#divs-cont-menu h2{
+    font-size: 1.8em;
 }
 
 #divs-cont-menu div{
@@ -73,8 +83,13 @@ header{
     gap: 15px;
 }
 
-#divs-cont-menu p:first-of-type{
+#divs-cont-menu p:first-of-type, #divs-cont-contact p{
     font-family: "Edu NSW ACT Cursive", cursive;
+    font-weight: 400;
+}
+
+#divs-cont-contact span{
+    font-weight: 500;
 }
 
 #divs-cont-menu div p:last-of-type{
@@ -86,7 +101,7 @@ header{
 
 /*Class Styling*/
 
-.info-cont{
+.info-cont, .food-item{
     width: 100%;
     background: linear-gradient(135deg,#FEC601 0%, #FFB400 100%);
     display: flex;
@@ -94,7 +109,15 @@ header{
     justify-content: center;
     align-items: center;
     border: 3px solid var(--chocolate);
-    border-radius: 15px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.contact-item{
+    width: calc(100% - 40px);
+    background: linear-gradient(135deg,#FEC601 0%, #FFB400 100%);
+    border: 3px solid var(--chocolate);
+    border-radius: 20px;
     padding: 20px;
 }
 
@@ -110,23 +133,25 @@ header{
 
 .nav-button{
     color: var(--khaki);
-    font-size: 3em;
+    font-size: 7vw;
     background-color: #0A95FF00;
     border: none;
     font-weight: 700;
 }
 
-.food-item{
-    width: 100%;
+.contactP{
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+.contact-title, .menu-title{
     background: linear-gradient(135deg,#FEC601 0%, #FFB400 100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border: 3px solid var(--chocolate);
-    border-radius: 15px;
-    padding: 20px;
-    gap: 15px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-bottom: 40px;
+    width: 50%;
+    text-align: center;
 }
 
 /*Other selectors*/

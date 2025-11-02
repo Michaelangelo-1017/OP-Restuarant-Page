@@ -59,7 +59,8 @@ const loadMenuPage = function(){
     const divsContMenu = document.createElement("div");
     divsContMenu.id = "divs-cont-menu"
     const title = document.createElement("h1");
-    title.innerText = "Mi Menu";
+    title.setAttribute("class","menu-title");
+    title.innerText = "Heaven's Menu";
     contentDiv.appendChild(title);
 
     const mainDiv = document.createElement("div");
@@ -74,7 +75,7 @@ const loadMenuPage = function(){
     })
 
     const snacksDiv = document.createElement("div");
-    
+
     const snacksH = document.createElement("h2");
     snacksH.innerText = "Snacks";
     snacksDiv.appendChild(snacksH);

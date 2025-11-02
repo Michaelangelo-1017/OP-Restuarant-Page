@@ -1,12 +1,12 @@
 import loadHomePage from './home-page-builder.js';
 import loadMenuPage from './menu-page-builder.js';
+import loadContactPage from './contact-page-builder.js';
 
 import "./styles.css";
-alert("index.js is working!");
 //Variables
 const homeBtn = document.getElementById("home-btn");
 const menuBtn = document.getElementById("menu-btn");
-const aboutBtn = document.getElementById("about-btn");
+const contactBtn = document.getElementById("contact-btn");
 
 document.addEventListener("DOMContentLoaded", ()=>{loadHomePage()});
 homeBtn.addEventListener("click",()=>{
@@ -17,7 +17,7 @@ menuBtn.addEventListener("click",()=>{
     document.getElementById("content").innerHTML = '';
     loadMenuPage();
 })
-aboutBtn.addEventListener("click",()=>{
+contactBtn.addEventListener("click",()=>{
     document.getElementById("content").innerHTML = '';
-    loadHomePage();
+    loadContactPage();
 })
